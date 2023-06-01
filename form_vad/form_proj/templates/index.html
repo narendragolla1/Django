@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Student Registration</title>
+        
+    </head>
+    <body>
+       {% if sent%}
+       <h1> Thanks for providing Information </h1>
+        <h2>Enter Next student marks</h2>
+        {% else%}
+        <h1>Student marks submit form</h1>
+        {% endif %}
+        <hr>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" name="" value="Submit Marks">
+
+        </form>
+    </body>
+</html>

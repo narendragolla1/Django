@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Student ModelForm</title>  
+    </head>
+    <body>
+       <h1>ModelForm </h1>
+       <form method='POST'>
+        {{form.as_p}}
+        {% csrf_token%}
+        <input type="submit" value="Enter">
+    </form>
+        
+        <script src="" async defer></script>
+    </body>
+</html>
