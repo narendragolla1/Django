@@ -17,3 +17,5 @@ class BookList(APIView):
         return  Response({"message":"List of the books"},status.HTTP_200_OK)
     def post(self,request):
          return  Response({"title":request.data.get('title')},status.HTTP_201_CREATED)
+     
+   
